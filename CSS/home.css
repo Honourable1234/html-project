@@ -129,7 +129,50 @@ nav div ul li:nth-child(6):hover div ul{
     margin-left: 18%;
 }
 /* CSS for section2 */
-
+#section2{
+    display: flex;  
+    justify-content: space-between;
+}
+#section2 div:nth-child(1){
+    width: 60%;
+}
+#section2 div:nth-child(1) p{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 3vh;
+    display: none;
+}
+#section2 div:nth-child(1) img{
+    width: 100%;
+    margin-top: 7vh;
+}
+#section2 div:nth-child(2){
+    width: 37%;
+}
+#section2 div:nth-child(2) img{
+    width: 100%;
+    margin-top: -10vh;
+    height: 90vh;
+}
+#section2 div:nth-child(2) p{
+    width: 380px;
+    height: 25vh;
+    margin-top: 10vh;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.74);
+}
+#section2o2{
+    width: 85%;
+    margin: auto;
+    margin-top: 15vh;
+}
+#section2o2 p{
+    font-size: 20px;
+    margin-left: 2%;
+}
+#section2o2 img{
+    margin: 2%;
+}
 /* media query */
 @media(max-width: 1000px){
     nav{
@@ -143,5 +186,66 @@ nav div ul li:nth-child(6):hover div ul{
     }
     #bars{
         display: block;
+    }
+    #section1{
+        width: 80%;
+    }
+    #section2 div:nth-child(2) img{
+        height: 70vh;
+    }
+    #section2 div:nth-child(2) p{
+        width: 310px;
+        margin-top: 5vh;
+        font-size: 15px;
+    }
+}
+@media(max-width: 750px){
+    #section1{
+        margin-left: 3%;
+    }
+    #section1 h1{
+        font-size: 70px;
+        line-height: 13vh;
+    }
+    #section1 p{
+        font-size: 18px;
+    }
+    #section2{
+        display: block;  
+        justify-content: center;
+    }
+    #section2 div:nth-child(1){
+        width: 90%;
+        margin: auto;
+    }
+    #section2 div:nth-child(1) p{
+        width: 100%;
+        font-size: 15px;
+        margin-top: 3vh;
+        display: block;
+    }
+    #section2 div:nth-child(2){
+        width: 90%;
+        margin-top: 17vh;
+        margin: auto;
+    }
+    #section2 div:nth-child(2) img{
+        height: 70vh;
+        margin-top: 10vh;
+    }
+    #section2 div:nth-child(2) p{
+        display: none;
+    }
+}
+@media(max-width: 350px){
+    #section1{
+        height: 50vh;
+    }
+    #section1 h1{
+        font-size: 25px;
+        line-height: 6vh;
+    }
+    #section2 div:nth-child(2) img{
+        height: 30vh;
     }
 }
