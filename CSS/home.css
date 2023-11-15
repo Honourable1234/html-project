@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* styling for head */
+header{
+    width: 100%;
+}
+nav{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+}
+nav img{
+    width: 250px;
+}
+nav div{
+    margin-top: 2vh;
+}
+nav div ul{
+    list-style-type: none;
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+nav div ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav div ul li:nth-child(4) div ul{
+    display: none;
+}
+nav div ul li:nth-child(4) div{
+    position: absolute;
+    top: 6vh;
+}
+nav div ul li:nth-child(4):hover div ul{
+    display: block;
+    font-size: 15px;
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    line-height: 2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+}
+nav div ul li:nth-child(5) div ul{
+    display: none;
+}
+nav div ul li:nth-child(5) div{
+    position: absolute;
+    top: 6vh;
+}
+nav div ul li:nth-child(5):hover div ul{
+    display: block;
+    font-size: 15px;
+    height: 15vh;
+    width: 100%;
+    background-color: white;
+    line-height: 2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+}
+nav div ul li:nth-child(6) div ul{
+    display: none;
+}
+nav div ul li:nth-child(6) div{
+    position: absolute;
+    top: 6vh;
+}
+nav div ul li:nth-child(6):hover div ul{
+    display: block;
+    font-size: 15px;
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    line-height: 2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+}
+#button{
+    width: 140px;
+    height: 6vh;
+    border: none;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.162);
+}
+#button:hover{
+    color: white;
+    background-color: black;
+}
+#bars{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>');
+    width: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5vh;
+    display: none;
+}
+/* media query */
+@media(max-width: 1000px){
+    nav{
+        width: 90%;
+    }
+    nav div ul{
+        display: none;
+    }
+    #button{
+        display: none;
+    }
+    #bars{
+        display: block;
+    }
+}
