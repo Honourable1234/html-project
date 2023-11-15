@@ -85,7 +85,7 @@ nav div ul li:nth-child(6):hover div ul{
     border-radius: 10px;
     box-shadow: 1px 1px 2px 3px gray;
 }
-#button{
+#button1{
     width: 140px;
     height: 6vh;
     border: none;
@@ -104,6 +104,32 @@ nav div ul li:nth-child(6):hover div ul{
     height: 5vh;
     display: none;
 }
+/* CSS for section1 */
+#section1{
+    width: 650px;
+    height: 70vh;
+    margin-left: 18%;
+    margin-top: 5vh;
+}
+#section1 h1{
+    font-size: 110px;
+    color: #FB9129;
+    line-height: 16vh;
+}
+#section1 h1 span{
+    color: black;
+}
+#section1 p{
+    font-size: 23px;
+}
+#button2{
+    width: 140px;
+    height: 8vh;
+    border: none;
+    margin-left: 18%;
+}
+/* CSS for section2 */
+
 /* media query */
 @media(max-width: 1000px){
     nav{
@@ -112,7 +138,7 @@ nav div ul li:nth-child(6):hover div ul{
     nav div ul{
         display: none;
     }
-    #button{
+    #button1{
         display: none;
     }
     #bars{
