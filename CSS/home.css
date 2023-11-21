@@ -171,7 +171,7 @@ nav div ul li:nth-child(6):hover div ul{
 }
 #section2o2 div{
     display: flex;
-    width: 80%;
+    width: 100%;
     gap: 5%;
 }
 #section2o2 div div:nth-child(1){
@@ -246,7 +246,7 @@ nav div ul li:nth-child(6):hover div ul{
     width: 120px;
 }
 #section4o2 div:nth-child(3) h1{
-    margin-top: 12vh;
+    margin-top: 8vh;
 }
 #section4o2 div:nth-child(3){
     margin-left: -8%;
@@ -263,17 +263,35 @@ nav div ul li:nth-child(6):hover div ul{
     background-image: url('../Images/flutterwave3.webp'); 
     background-size: contain;  
     background-repeat: no-repeat;
-    
+}
+#section3{
+    height: 200vh;
+    background-color: #F8FAFD;
+    padding-top: 20vh;
+}
+#section3 h1{
+    width: 750px;
+    font-size: 70px;
+    margin-left: 15%;
+}
+#section3 h1 span{
+    color: #35A162;
 }
 /* media query */
-@media(max-width: 1200){
+@media(max-width: 1200px){
     #section4o2{
         width: 100%;
     }
     #section4o2 div:nth-child(3){
-        margin-left: 15%;
-        margin: 3
-        vh;
+        margin-left: -10%;
+        margin-top: 5vh;
+    }
+    #section4o2 div h1{
+        color: black;
+        font-size: 20px;
+    }
+    #section4o2 div p{
+        font-size: 17px;
     }
 }
 @media(max-width: 1000px){
@@ -300,14 +318,40 @@ nav div ul li:nth-child(6):hover div ul{
         margin-top: 5vh;
         font-size: 15px;
     }
+    #section3 h1{
+    font-size: 50px;
+    width: 80%;
+    margin: auto;
+}
+}
+@media(max-width: 900px){
+    #section4o2 div:nth-child(1){
+        margin-left: 15%;
+        height: 35vh;
+    }    
+    #section4o2{
+        width: 80%;
+        display: block;
+        margin-left: 10%;
+    }
+    #section4o2 div{
+        width: 60%;
+    }
+    #section4o2 div:nth-child(3){
+        margin-left: 0;
+    }
+    #section3o2{
+        height: 280vh;
+    }
 }
 @media(max-width: 750px){
     #section1{
         margin-left: 3%;
     }
     #section1 h1{
-        font-size: 70px;
+        font-size: 60px;
         line-height: 13vh;
+        width: 80%;
     }
     #section1 p{
         font-size: 18px;
@@ -341,6 +385,24 @@ nav div ul li:nth-child(6):hover div ul{
     #section2o2 p{
         font-size: 15px;
     }
+    #section3o2 h1{
+        font-size: 65px;
+        width: 80%;
+        line-height: 9vh;
+    }
+    #section4o2 div{
+        width: 80%;
+        margin-top: 5vh;
+    }
+    #section4o2 div:nth-child(1){
+        height: 50vh;
+    }
+     #section3o2{
+        height: 300vh;
+    }
+    #section3 h1{
+    font-size: 40px;
+}
 }
 @media(max-width: 350px){
     #section1{
@@ -349,6 +411,7 @@ nav div ul li:nth-child(6):hover div ul{
     #section1 h1{
         font-size: 25px;
         line-height: 6vh;
+        width: 80%;
     }
     #section2 div:nth-child(2) img{
         height: 30vh;
@@ -356,4 +419,20 @@ nav div ul li:nth-child(6):hover div ul{
     #section2o2 p{
         font-size: 10px;
     }
+    #section3o2 h1{
+        font-size: 25px;
+        line-height: 7vh;
+    }
+    #section4o2 div{
+        margin-top: 5vh;
+    }
+    #section4o2 div{
+        width: 100%;
+    }
+    #section4o2 div:nth-child(1){
+        height: 70vh;
+    }
+    nav img{
+    width: 50%;
+}
 }
