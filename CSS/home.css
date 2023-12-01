@@ -264,80 +264,68 @@ nav div ul li:nth-child(6):hover div ul{
     background-size: contain;  
     background-repeat: no-repeat;
 }
+/* CSS for section3 */
 #section3{
+    width: 100%;
     height: 300vh;
     background-color: #F8FAFD;
-    padding-top: 20vh;
-    padding-left: 10%;
+    padding-top: 25vh;
 }
-#section3 h1{
-    width: 750px;
-    font-size: 70px;
-    margin-left: 5%;
+#paragraph1{
+    font-size: 75px;
+    width: 50%;
+    margin-left: 10%;
 }
-#section3 h1 span{
+#paragraph1 span{
     color: #35A162;
 }
-#section2o3{
-    display: flex;
-    width: 80%;
-    height: 85vh;
-    border: thin solid;
-    position: relative;
+#section1o3{
+    width: 1000px;
+    height: 80vh;
+    margin: auto;
+    margin-top: 15vh;
 }
-#section2o3 div:nth-child(1) h1{
-    font-size: 22px;
-    margin-top: 30vh;
-    margin-left: 20%;
+#section1o3 div:nth-child(1){
+    font-size: 21px;
+    padding-top: 12vh;
 }
-#section2o3 div:nth-child(1) p{
-    font-size: 18px;
-    width: 40%;
-    margin-left: 20%;
-    line-height: 1.7;
-    margin-top: 3vh;
-}
-#section2o3 div:nth-child(1) button{
-    margin-left: 20%;
+#section1o3 div:nth-child(1) button{
     width: 120px;
-    padding: 10px;
-    margin-top: 5vh;
+    padding: 12px;
 }
-#section2o3 div:nth-child(2){
-    width: 55%;
-    height: 90vh;
-    left: 45%;
+#section1o3 div:nth-child(2){
     background-image: url('../Images/flutterwave4.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
 }
-#section3o3{
-    display: flex;
-    width: 80%;
+#section2o3{
+    width: 1200px;
     height: 80vh;
-    border: thin solid;
-    position: relative;
+    margin: auto;
+    margin-top: -10vh;
 }
-#section3o3 div:nth-child(1){
-    width: 55%;
-    height: 90vh;
-    margin-top: -5vh;
+#section2o3 div:nth-child(1){
     background-image: url('../Images/flutterwave5.jpg');
-    background-repeat: no-repeat;
     background-size: contain;
-    position: absolute;
 }
-#section3o3 div:nth-child(2){
-    width: 25%;
-    margin-left: 60%;
+#section2o3 div:nth-child(2){
+    padding-top: 15vh;
+    padding-left: 7%;
+    font-size: 21px;
 }
-#section3o3 div:nth-child(2) h1{
-    font-size: 22px;
+#section2o3 div:nth-child(2) h4{
     margin-top: 10vh;
 }
-#section3o3 div:nth-child(2) p{
+#section2o3 div:nth-child(2) span{
+    color: #FB9129;
+    font-size: 18px;
+}
+#section3o3{
+    width: 50%;
     font-size: 20px;
+    margin-top: 2vh;
+}
+#section3o3 span{
+    color: #35A162;
 }
 /* media query */
 @media(max-width: 1200px){
