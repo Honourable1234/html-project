@@ -31,6 +31,111 @@ nav div ul li a{
     text-decoration: none;
     color: black;
 }
+#toughdropdown{
+    display: none;
+}
+#tough{
+    display: none;
+}
+#tough div:nth-child(1){
+    width: 50%;
+    background-color: whitesmoke;
+    margin-top: 0;
+    height: 100%;
+}
+#tough div:nth-child(1) section{
+    background-color: rgb(247, 240, 240);
+    height: 8vh;
+    width: 90%;
+    margin: 2vh auto;
+    border-radius: 10px;
+    padding-top: 2vh;
+    font-size: 18px;
+    padding-left: 3px;
+}
+#tough div:nth-child(2) section{
+    width: 90%;
+    font-size: 12px;
+    line-height: 1;
+    height: 12vh;
+    margin: auto;
+}
+nav div ul li:nth-child(1):hover #tough{
+    width: 40%;
+    height: 60vh;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+    display: block;
+    position: absolute;
+    left: 400px;
+    display: flex;
+    top: 7vh;
+}
+nav div ul li:nth-child(2):hover #toughdropdown{
+    width: 50%;
+    height: 50vh;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+    display: block;
+    position: absolute;
+    left: 400px;
+    display: flex;
+    top: 7vh;
+}
+#toughdropdown div:nth-child(1){
+    width: 33%;
+    background-color: whitesmoke;
+    height: 100%;
+    margin-top: 0;
+}
+#toughdropdown div:nth-child(1) section{
+    background-color: rgb(247, 240, 240);
+    height: 8vh;
+    width: 90%;
+    margin: 2vh auto;
+    border-radius: 10px;
+    padding-top: 2vh;
+    font-size: 20px;
+    padding-left: 3px;
+}
+#toughdropdown div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 67%;
+}
+#toughdropdown div:nth-child(2) section{
+    width: 45%;
+    font-size: 12px;
+    line-height: 1;
+    height: 3vh;
+}
+nav div ul li:nth-child(3) div{
+    position: absolute;
+    top: 6vh;
+    display: none;
+}
+nav div ul li:nth-child(3):hover div{
+    display: block;
+    font-size: 12px;
+    height: 65vh;
+    width: 20%;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+    left: 50%;
+}
+nav div ul li:nth-child(3):hover div section:nth-child(6){
+    border: medium dotted;
+    height: 8vh;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-top: 2vh;
+    text-align: center;
+}
 nav div ul li:nth-child(4) div ul{
     display: none;
 }
@@ -559,8 +664,9 @@ nav div ul li:nth-child(6):hover div ul{
     padding: 22px;
     border-radius: 10px;
 }
+/* CSS for section6 */
 #section6{
-    height: 500vh;
+    height: 120vh;
     width: 100%;
     padding-left: 10%;
     padding-top: 15vh;
@@ -641,6 +747,82 @@ nav div ul li:nth-child(6):hover div ul{
     background-size: contain;
     background-repeat: no-repeat;
 }
+#section2o6{
+    width: 900px;
+    height: 55vh;
+    background-color: #1D1D1D;
+    margin: 25vh auto;
+    border-radius: 20px;
+    padding-top: 7vh;
+    padding-left: 10%;
+    padding-right: 15%;
+    color: #F8FAFD;
+    box-shadow: 15px 15px 15px 5px rgb(109, 107, 107);
+}
+#section2o6 h1{
+    font-size: 50px;
+}
+#section2o6 p{
+    font-size: 20px;
+}
+/* CSS for footer */
+#footer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+#footer ul{
+    list-style-type: none;
+}
+#footer ul li{
+    line-height: 3;
+}
+#footer ul li a{
+    text-decoration: none;
+    color: #313131;
+}
+#footer ul li a:hover{
+    color: #00ABAB;
+}
+#line{
+    width: 1100px;
+    border: 1px solid rgb(200, 197, 197);
+    margin: 5vh auto;
+}
+#section2of{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#section2of div:nth-child(2){
+    width: 60%;
+}
+#section2of div:nth-child(2) ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+#section2of div:nth-child(2) ul li a{
+    text-decoration: none;
+    color: #313131;
+}
+#section2of div:nth-child(2) ul li a:hover{
+    color: #00ABAB;
+}
+#footerb{
+    display: none;
+}
+#footerb div{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    border-bottom: thin solid gray;
+    height: 5vh;
+    color: gray;
+}
 @keyframes slide1{
     from{left: 25%;}
     to{left: 45%;}
@@ -706,6 +888,12 @@ nav div ul li:nth-child(6):hover div ul{
         font-size: 16px;
         margin-top: 7vh;
     }
+    #footer{
+        display: 100%;
+    }
+    #line{
+        width: 100%;
+    }
 }
 @media(max-width: 1130px){
     #section3o3{
@@ -742,9 +930,15 @@ nav div ul li:nth-child(6):hover div ul{
     #section1o6{
         height: 100vh;
     }
+    #section6{
+        height: 170vh;
+    }
     #section6b{
         font-size: 70px;
         width: 600px;
+    }
+    #footer{
+        width: 100%;
     }
 }
 @media(max-width: 1000px){
@@ -802,7 +996,7 @@ nav div ul li:nth-child(6):hover div ul{
         padding-left: 5%;
     }
     #section6{
-        height: 500vh;
+        height: 230vh;
     }
     #section1o6{
         display: none;
@@ -842,6 +1036,28 @@ nav div ul li:nth-child(6):hover div ul{
     #section5 p{
         width: 80%;
         font-size: 15px;
+    }
+    #section6 h1{
+    font-size: 50px;
+    width: 90%;
+    }
+    #section1o6b{
+        height: 100vh;
+    }
+    #section1o6b h1{
+    font-size: 18px;
+    }
+    #section2o6{
+        width: 100%;
+    }
+    #footer{
+        display: none;
+    }
+    #section2of{
+        display: none;
+    }    
+    #footerb{
+        display: block;
     }
 }
 @media(max-width: 750px){
@@ -916,6 +1132,12 @@ nav div ul li:nth-child(6):hover div ul{
         width: 90%;
         font-size: 50px;
     }
+    #section2o6 h1{
+        font-size: 45px;
+    }
+    #section2o6 p{
+        font-size: 17px;
+    }
 }
 @media(max-width:650px){
     #section3b{
@@ -935,6 +1157,10 @@ nav div ul li:nth-child(6):hover div ul{
     }
     #section4o3b{
         font-size: 45px;
+    }
+    #section2o6{
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 @media(max-width:500px){
@@ -970,6 +1196,9 @@ nav div ul li:nth-child(6):hover div ul{
     #section5 ul{
         line-height: 1.5;
         font-size: 15px;
+    }
+    #section2o6{
+        padding-top: 3vh;
     }
 }
 @media(max-width: 350px){

@@ -1,0 +1,653 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* styling for head */
+header{
+    width: 100%;
+}
+nav{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+}
+nav img{
+    width: 250px;
+}
+nav div{
+    margin-top: 2vh;
+}
+nav div ul{
+    list-style-type: none;
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+nav div ul li a{
+    text-decoration: none;
+    color: black;
+}
+#toughdropdown{
+    display: none;
+}
+#tough{
+    display: none;
+}
+#tough div:nth-child(1){
+    width: 50%;
+    background-color: whitesmoke;
+    margin-top: 0;
+    height: 100%;
+}
+#tough div:nth-child(1) section{
+    background-color: rgb(247, 240, 240);
+    height: 8vh;
+    width: 90%;
+    margin: 2vh auto;
+    border-radius: 10px;
+    padding-top: 2vh;
+    font-size: 18px;
+    padding-left: 3px;
+}
+#tough div:nth-child(2) section{
+    width: 90%;
+    font-size: 12px;
+    line-height: 1;
+    height: 12vh;
+    margin: auto;
+}
+nav div ul li:nth-child(1):hover #tough{
+    width: 40%;
+    height: 60vh;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+    display: block;
+    position: absolute;
+    left: 400px;
+    display: flex;
+    top: 7vh;
+}
+nav div ul li:nth-child(2):hover #toughdropdown{
+    width: 50%;
+    height: 50vh;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+    display: block;
+    position: absolute;
+    left: 400px;
+    display: flex;
+    top: 7vh;
+}
+#toughdropdown div:nth-child(1){
+    width: 33%;
+    background-color: whitesmoke;
+    height: 100%;
+    margin-top: 0;
+}
+#toughdropdown div:nth-child(1) section{
+    background-color: rgb(247, 240, 240);
+    height: 8vh;
+    width: 90%;
+    margin: 2vh auto;
+    border-radius: 10px;
+    padding-top: 2vh;
+    font-size: 20px;
+    padding-left: 3px;
+}
+#toughdropdown div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 67%;
+}
+#toughdropdown div:nth-child(2) section{
+    width: 45%;
+    font-size: 12px;
+    line-height: 1;
+    height: 3vh;
+}
+nav div ul li:nth-child(3) div{
+    position: absolute;
+    top: 6vh;
+    display: none;
+}
+nav div ul li:nth-child(3):hover div{
+    display: block;
+    font-size: 12px;
+    height: 65vh;
+    width: 20%;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+    left: 50%;
+}
+nav div ul li:nth-child(3):hover div section:nth-child(6){
+    border: medium dotted;
+    height: 8vh;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-top: 2vh;
+    text-align: center;
+}
+nav div ul li:nth-child(4) div ul{
+    display: none;
+}
+nav div ul li:nth-child(4) div{
+    position: absolute;
+    top: 6vh;
+}
+nav div ul li:nth-child(4):hover div ul{
+    display: block;
+    font-size: 15px;
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    line-height: 2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+}
+nav div ul li:nth-child(5) div ul{
+    display: none;
+}
+nav div ul li:nth-child(5) div{
+    position: absolute;
+    top: 6vh;
+}
+nav div ul li:nth-child(5):hover div ul{
+    display: block;
+    font-size: 15px;
+    height: 15vh;
+    width: 100%;
+    background-color: white;
+    line-height: 2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+}
+nav div ul li:nth-child(6) div ul{
+    display: none;
+}
+nav div ul li:nth-child(6) div{
+    position: absolute;
+    top: 6vh;
+}
+nav div ul li:nth-child(6):hover div ul{
+    display: block;
+    font-size: 15px;
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    line-height: 2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px gray;
+}
+#button1{
+    width: 140px;
+    height: 6vh;
+    border: none;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.162);
+}
+#button:hover{
+    color: white;
+    background-color: black;
+}
+#bars{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>');
+    width: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5vh;
+    display: none;
+}
+/* CSS for section1 */
+#section1{
+    height: 110vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#section1 div:nth-child(1) h1{
+    font-size: 80px;
+}
+#section1 div:nth-child(1) h1 span{
+    color: #EB5757;
+}
+#section1 div:nth-child(1) p{
+    font-size: 22px;
+}
+#section1 div:nth-child(1) ul{
+    font-size: 18px;
+    margin-top: 5vh;
+}
+#section1 div:nth-child(1) button{
+    width: 135px;
+    margin-top: 4vh;
+    height: 8vh;
+    border-radius: 10px;
+}
+#section2o1 h5{
+    width: 80%;
+    margin: 5vh auto;
+}
+/* CSS for section2 */
+#section2{
+    margin-top: 20vh;
+    height: 100vh;
+    background-color: #F8FAFD;
+    padding-top: 15vh;
+}
+#section2 h1{
+    width: 80%;
+    margin: auto;
+    font-size: 80px;
+}
+#section2 h1 span{
+    color: #EB5757;
+}
+#section2 div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+#section2 div div{
+    display: block;
+    padding-top: 10vh;
+    height: 30vh;
+    width: 20%;
+}
+#section2 div div h6{
+    margin-top: 2vh;
+}
+/* CSS for section3 */
+#section3{
+    height: 100vh;
+    padding-top: 15vh;
+}
+#section3 h1{
+    width: 80%;
+    margin: auto;
+    font-size: 80px;
+}
+#section3 div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+#section3 div div{
+    display: block;
+    padding-top: 10vh;
+    height: 30vh;
+    width: 20%;
+}
+#section3 div div section{
+    height: 50px;
+    width: 50px;
+    padding: 12px;
+    text-align: center;
+    background-color: #C8F7E4;
+    color: #75A162;
+    border-radius: 50%;
+}
+#section3 div div h5{
+    margin-top: 2vh;
+}
+/* CSS for section4 */
+#section4{
+    height: 200vh;
+    background-color: #F8FAFD;
+    padding-top: 25vh;
+}
+#section4 h1{
+    font-size: 80px;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+#accordionExample{
+    margin-top: 15vh;
+}
+/* CSS for section5 */
+#section5{
+    height: 100vh;
+    width: 80%;
+    padding-top: 20vh;
+    margin: auto;
+}
+#section5 h1{
+    font-size: 75px;
+    width: 650px;
+}
+#section5 span{
+    color: #EB5757;
+}
+#section5 p{
+    font-size: 22px;
+    width: 100%;
+    margin-top: 5vh;
+}
+#section5 div{
+    display: flex;
+}
+#section5 div section{
+    width: 50%;
+    margin-top: 10vh;
+}
+#section5 div section p{
+    font-size: 17px;
+    margin-top: 1vh;
+    width: 70%;
+}
+#section2o5{
+    height: 210vh;
+}
+#section2o5 img{
+    width: 100%;
+}
+#box{
+    width: 1000px;
+    height: 60vh;
+    margin: 25vh auto;
+    border-radius: 25px;
+    background-color: #1D1D1D;
+    box-shadow: 5px 5px 5px 5px gray;
+    color: #FFFFFF;
+    padding: 90px;
+}
+#box h1{
+    font-size: 60px;
+}
+#box p{
+    font-size: 22px;
+    width: 700px;
+}
+/* CSS for footer */
+#footer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+#footer ul{
+    list-style-type: none;
+}
+#footer ul li{
+    line-height: 3;
+}
+#footer ul li a{
+    text-decoration: none;
+    color: #313131;
+}
+#footer ul li a:hover{
+    color: #00ABAB;
+}
+#line{
+    width: 1100px;
+    border: 1px solid rgb(200, 197, 197);
+    margin: 5vh auto;
+}
+#section2of{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#section2of div:nth-child(2){
+    width: 60%;
+}
+#section2of div:nth-child(2) ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+#section2of div:nth-child(2) ul li a{
+    text-decoration: none;
+    color: #313131;
+}
+#section2of div:nth-child(2) ul li a:hover{
+    color: #00ABAB;
+}
+#footerb{
+    display: none;
+}
+#footerb div{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    border-bottom: thin solid gray;
+    height: 5vh;
+    color: gray;
+}
+/* media query */
+@media(max-width: 1250px){
+    #section1{
+        width: 100%;
+        height: 130vh;
+    }
+    #section2o1 h5{
+        width: 100%;
+    }
+    #section2{
+        height: 120vh;
+    }
+    #section2 h1{
+        width: 100%;
+    }
+    #section2 div{
+        width: 100%;
+    }
+    #section3 div{
+        width: 100%;
+    }
+}
+@media(max-width: 1200px){
+    #section1{
+        height: 120vh;
+    }
+    #section1 div:nth-child(1) h1{
+        font-size: 60px;
+    }
+    #footer{
+        display: 100%;
+    }
+    #line{
+        width: 100%;
+    }
+}
+@media(max-width: 1100px){
+    #section1{
+        height: 210vh;
+        display: block;
+        padding-top: 10vh;
+    }
+    #section1 div{
+        width: 80%;
+        margin: auto;
+    }
+    #section1 div:nth-child(1) h1{
+        font-size: 80px;
+    }
+    #footer{
+        width: 100%;
+    }
+}
+@media(max-width: 1000px){
+    nav{
+        width: 90%;
+    }
+    nav div ul{
+        display: none;
+    }
+    #button1{
+        display: none;
+    }
+    #bars{
+        display: block;
+    }
+    #section1 div{
+        width: 100%;
+    }
+    #box{
+        width: 90%;
+    }
+    #box h1{
+        font-size: 55px;
+    }
+    #box p{
+        font-size: 20px;
+        width: 70%;
+    }
+}
+@media(max-width: 900px){
+    #section2 h1{
+        font-size: 55px;
+    }
+    #section3 h1{
+        font-size: 55px;
+    }
+    #box{
+        padding: 50px;
+    }
+    #footer{
+        display: none;
+    }
+    #section2of{
+        display: none;
+    }
+    #footerb{
+        display: block;
+    }
+}
+@media(max-width: 800px){
+    #section1{
+        height: 230vh;
+    }
+    #section1 div:nth-child(2) img{
+        width: 90%;
+    }
+    #section2 div div p{
+        font-size: 14px;
+    }
+    #section3 div div p{
+        font-size: 14px;
+    }
+    #section4 h1{
+        font-size: 60px;
+        width: 550px;
+    }
+    #section5{
+        height: 120vh;
+        width: 90%;
+        padding-top: 20vh;
+    }
+    #section5 h1{
+        font-size: 55px;
+        width: 550px;
+    }
+    #box h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    #box p{
+        width: 100%;
+        font-size: 18px;
+    }
+}
+@media(max-width: 650px){
+    #section1{
+        height: 200vh;
+    }
+    #section1 div:nth-child(1) h1{
+        font-size: 55px;
+    }
+    #section2{
+        height: 170vh;
+    }
+    #section2 div div{
+        height: 65vh;
+        width: 40%;
+    }
+    #section3{
+        height: 170vh;
+    }
+    #section3 div div{
+        height: 65vh;
+        width: 40%;
+    }
+    #section4 h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    #section5 h1{
+        font-size: 40px;
+        width: 80%;
+    }
+}
+@media(max-width: 500px){
+    #section5 div{
+        display: block;
+    }
+    #section5 div section{
+        width: 100%;
+        margin-top: 6vh;
+    }
+    #section5 div section p{
+        font-size: 14px;
+        margin-top: 1vh;
+        width: 90%;
+    }
+}
+@media(max-width: 400px){
+    #box h1{
+        font-size: 35px;
+    }
+    #box p{
+        font-size: 14px;
+    }
+}
+@media(max-width: 350px){
+    #section1{
+        height: 220vh;
+    }
+    nav img{
+        width: 50%;
+    }
+    #section2{
+        height: 230vh;
+    }
+    #section2 div div{
+        height: 90vh;
+        width: 45%;
+    }
+    #section3{
+        height: 230vh;
+    }
+    #section3 div div{
+        height: 90vh;
+        width: 45%;
+    }
+    #section4 h1{
+        font-size: 25px;
+    }
+    #section5{
+        height: 140vh;
+    }
+    #box{
+        height: 70vh;
+    }
+}
