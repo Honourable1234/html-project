@@ -559,6 +559,88 @@ nav div ul li:nth-child(6):hover div ul{
     padding: 22px;
     border-radius: 10px;
 }
+#section6{
+    height: 500vh;
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 15vh;
+}
+#section6 h1{
+    font-size: 70px;
+    width: 700px;
+}
+#section6 h1 span{
+    color: #6672C7;
+}
+#section1o6{
+    width: 100%;
+    border-left: medium dotted;
+    height: 70vh;
+    margin-top: 15vh;
+
+}
+#section1o6 h1{
+    font-size: 20px;
+    margin-left: -2.5%;
+    padding-left: 7%;
+    border-left: thistle thick solid;
+}
+#section1o6 h1 a{
+    text-decoration: none;
+    color: #00ABAB;
+}
+#section1o6 p{
+    padding-left: 5%;
+    font-size: 15px;
+}
+#smally{
+    width: 70%;
+    height: 25vh;
+    margin-left: 5%;
+    display: flex;
+}
+#smally div{
+    width: 50%;
+}
+#earth{
+    background-image: url(../Images/flutterwave6real.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#section1o6b{
+    width: 100%;
+    border-left: medium dotted;
+    height: 70vh;
+    margin-top: 15vh;
+    display: none;
+}
+#section1o6b h1{
+    font-size: 20px;
+    padding-left: 7%;
+    border-left: thistle thick solid;
+}
+#section1o6b h1 a{
+    text-decoration: none;
+    color: #00ABAB;
+}
+#section1o6b p{
+    padding-left: 5%;
+    font-size: 15px;
+}
+#smally{
+    width: 70%;
+    height: 25vh;
+    margin-left: 5%;
+    display: flex;
+}
+#smally div{
+    width: 50%;
+}
+#earthb{
+    background-image: url(../Images/flutterwave6real.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 @keyframes slide1{
     from{left: 25%;}
     to{left: 45%;}
@@ -657,6 +739,13 @@ nav div ul li:nth-child(6):hover div ul{
     #section1o4b{
         display: block;
     }
+    #section1o6{
+        height: 100vh;
+    }
+    #section6b{
+        font-size: 70px;
+        width: 600px;
+    }
 }
 @media(max-width: 1000px){
     nav{
@@ -693,7 +782,7 @@ nav div ul li:nth-child(6):hover div ul{
         height: 280vh;
     }
     #section3{
-    display: none;
+        display: none;
     }
     #section3b{
         height: 500vh;
@@ -711,6 +800,19 @@ nav div ul li:nth-child(6):hover div ul{
     }
     #section5{
         padding-left: 5%;
+    }
+    #section6{
+        height: 500vh;
+    }
+    #section1o6{
+        display: none;
+    }
+    #section1o6b{
+        display: block;
+    }
+    #earthb{
+        height: 80vh;
+        margin-top: 20vh;
     }
 }
 @media(max-width: 900px){
